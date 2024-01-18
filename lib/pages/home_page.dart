@@ -7,17 +7,20 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    int days = 1;
-    String name = "Durrani";
-
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.deepPurpleAccent,
-        title: const Text("1st App"),
+        backgroundColor: Colors.deepPurple,
+        foregroundColor: Colors.white,
+        title: const Text("Practice"),
       ),
       body: Center(
         child: Container(
-          child: Text("$days Shabab $name"),
+          child: const Text(
+            "Home Page",
+            style: TextStyle(
+              fontSize: 30,
+            ),
+          ),
         ),
       ),
       drawer: const Drawer(),
